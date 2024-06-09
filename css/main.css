@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
+body {
+  background-color: black;
+  color: white;
+}
+body .nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 77px;
+}
+body .nav_container .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .nav_container .left .logo {
+  height: 37px;
+  width: 37px;
+}
+body .nav_container .left .title {
+  font-size: 24px;
+  font-weight: 600;
+}
+body .nav_container .right {
+  display: flex;
+  gap: 34px;
+  font-size: 16px;
+  font-weight: 600;
+  align-items: center;
+}
+body .nav_container .right a {
+  color: white;
+  text-decoration: none;
+}
+body .nav_container .right a:hover {
+  text-decoration: none;
+  color: white;
+}
+body .nav_container .right .right_general {
+  display: flex;
+  gap: 34px;
+  font-size: 16px;
+  font-weight: 600;
+  align-items: center;
+}
+body .nav_container .right .right_general .down_icon {
+  scale: 0.6;
+}
+body .nav_container .right .right_extra {
+  display: flex;
+  gap: 34px;
+  font-size: 16px;
+  font-weight: 600;
+  align-items: center;
+}
+body .nav_container .right .right_extra .bag_icon {
+  color: #62fcf1;
+}
+body .nav_container .right .right_extra .bag_icon:hover {
+  color: #038e86;
+}
+body .nav_container .right .right_extra .menu_bar {
+  display: none;
+}
+body .nav_container .right .right_extra .btn_getStarted {
+  padding: 15px 24px;
+  border: 2px solid #62fcf1;
+  background: transparent;
+  color: #62fcf1;
+  font-size: 17.6px;
+  font-weight: 500;
+}
+body .nav_container .right .right_extra .btn_getStarted:hover {
+  background-color: #038e86;
+  border: 2px solid #038e86;
+  color: white;
+}
+body .nav_container #men {
+  height: 100vh;
+  border: 1px solid red;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  justify-content: start;
+  flex-direction: column;
+  display: none;
+}
+body .nav_container #men a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid gray;
+  padding: 10px 10px;
+}
+body .nav_container #men a:hover {
+  text-decoration: none;
+  color: white;
+}
+body .nav_container #men .down_icon {
+  scale: 0.6;
+}
+body .nav_container #overlay {
+  background: black;
+  height: 100vh;
+  max-width: 700px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: end;
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .nav_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 77px;
+  }
+}
+@media (max-width: 1040px) {
+  .right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .menu_bar {
+    display: block !important;
+  }
+  .right_general {
+    display: none !important;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Sen", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
