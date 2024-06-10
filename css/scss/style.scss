@@ -61,6 +61,7 @@ body {
         font-size: 16px;
         font-weight: 600;
         align-items: center;
+        cursor: pointer;
 
         .bag_icon {
           color: $primary_color;
@@ -93,22 +94,30 @@ body {
 
     #men {
       height: 100vh;
-      border: 1px solid red;
+      background: rgb(53, 52, 52);
       width: 200px;
       position: absolute;
       top: 0;
       right: 0;
       z-index: 20;
-      // display: flex;
       justify-content: start;
       flex-direction: column;
       display: none;
+      padding-top: 20px;
 
+      .x_icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 6px;
+        cursor: pointer;
+      }
       a {
         color: white;
         text-decoration: none;
         border-bottom: 1px solid gray;
         padding: 10px 10px;
+        margin: 4px;
 
         &:hover {
           text-decoration: none;
@@ -121,7 +130,7 @@ body {
     }
 
     #overlay {
-      background: black;
+      background: transparent;
       height: 100vh;
       max-width: 700px;
       position: absolute;
@@ -134,34 +143,59 @@ body {
       justify-content: end;
       display: none;
     }
-  }
-}
 
-@media (max-width: 1300px) {
-  .nav_container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 77px;
-  }
-}
+    @media (max-width: 1300px) {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 77px;
+    }
 
-@media (max-width: 1040px) {
-  .right {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
+    @media (max-width: 1040px) {
+      .right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
 
-@media (max-width: 700px) {
-  .menu_bar {
-    display: block !important;
-  }
+    @media (max-width: 700px) {
+      .menu_bar {
+        display: block !important;
+      }
 
-  .right_general {
-    display: none !important;
+      .right_general {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .left {
+        .title {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+      .right {
+        .right_extra {
+          gap: 15px;
+          font-size: 12px;
+          .btn_getStarted {
+            padding: 10px 10px;
+            border: 2px solid $primary_color;
+            // font-size: 10px;
+            font-size: 12px;
+          }
+        }
+      }
+
+      #men {
+        width: 175px;
+        padding-top: 10px;
+        font-size: 12px;
+      }
+    }
   }
 }
