@@ -1,0 +1,9 @@
+$primary_color: #62fcf1;
+$secondary_color: #038e86;
+$orange: #9a3607;
+
+@mixin text($size, $color, $weight) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
