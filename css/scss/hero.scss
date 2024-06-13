@@ -3,7 +3,7 @@
 .carousel {
   position: relative;
   width: 100%;
-  min-height: 80vh;
+  min-height: fit-content;
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
@@ -174,12 +174,11 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    height: 60vh;
+    height: 50vh;
     align-items: center;
 
     &:hover button {
       margin: 0 3rem;
-      transition: all 0.3s ease-in-out;
     }
 
     button {
@@ -193,6 +192,7 @@
       width: 50px;
       user-select: none;
       margin: 0 -3rem;
+      transition: all 0.3s ease-in-out;
     }
   }
 

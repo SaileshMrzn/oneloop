@@ -61,6 +61,15 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(err);
     });
 
+  fetch("../pages/newDimension.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.getElementById("dimension_section").innerHTML = content;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
   showSlide(currentIndex);
 });
 

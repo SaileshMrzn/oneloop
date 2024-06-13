@@ -174,7 +174,7 @@ body .nav_container #overlay {
 .carousel {
   position: relative;
   width: 100%;
-  min-height: 80vh;
+  min-height: fit-content;
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
@@ -350,12 +350,11 @@ body .nav_container #overlay {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  height: 60vh;
+  height: 50vh;
   align-items: center;
 }
 .carousel .carousel-control:hover button {
   margin: 0 3rem;
-  transition: all 0.3s ease-in-out;
 }
 .carousel .carousel-control button {
   background-color: rgba(0, 0, 0, 0.5);
@@ -368,6 +367,7 @@ body .nav_container #overlay {
   width: 50px;
   user-select: none;
   margin: 0 -3rem;
+  transition: all 0.3s ease-in-out;
 }
 .carousel .carousel-control.prev {
   left: 10px;
@@ -512,6 +512,149 @@ body .nav_container #overlay {
   .features_container .features_list .list {
     width: 100%;
     margin-bottom: 70px;
+  }
+}
+
+.dimension_container {
+  min-height: 825px;
+  padding: 20px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.dimension_container .dimension_title h1 {
+  font-size: 64px;
+  color: white;
+  font-weight: 600;
+  margin: 30px 26px;
+}
+.dimension_container .dimension_content {
+  display: flex;
+}
+.dimension_container .dimension_content .actual_content {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 26px;
+  gap: 40px;
+  z-index: 20;
+}
+.dimension_container .dimension_content .actual_content p {
+  font-size: 17.6px;
+  color: #e3e1dd;
+  font-weight: 400;
+  max-width: 50%;
+  line-height: 30.8px;
+}
+.dimension_container .dimension_content .actual_content .images {
+  display: flex;
+  gap: 25px;
+}
+.dimension_container .dimension_content .actual_content .images .image_frame {
+  max-height: 235.5px;
+  max-width: 314px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.dimension_container .dimension_content .actual_content .images .image_frame img {
+  max-height: 235.5px;
+  max-width: 314px;
+  object-fit: cover;
+  transition: all 1s ease;
+}
+.dimension_container .dimension_content .actual_content .images .image_frame img:hover {
+  transform: scale(1.1);
+}
+.dimension_container .dimension_content .actual_content .stats_container {
+  display: flex;
+  gap: 5rem;
+}
+.dimension_container .dimension_content .actual_content .stats_container .stats h2 {
+  font-size: 44px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.dimension_container .dimension_content .actual_content .stats_container .stats .stats_extra {
+  color: #62fcf1;
+}
+.dimension_container .dimension_content .actual_content .stats_container .stats p {
+  font-size: 17.6px;
+  color: #e3e1dd;
+  font-weight: 400;
+  min-width: 100%;
+}
+.dimension_container .dimension_content .background img {
+  position: absolute;
+  right: 12%;
+  bottom: 0;
+  z-index: 10;
+}
+@media (max-width: 1256px) {
+  .dimension_container .dimension_content .background img {
+    right: 5%;
+  }
+}
+@media (max-width: 1160px) {
+  .dimension_container .dimension_content .actual_content .images {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .dimension_container .dimension_title h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+  }
+  .dimension_container .dimension_content .actual_content p {
+    max-width: 90%;
+  }
+  .dimension_container .dimension_content .actual_content .stats_container {
+    flex-direction: column;
+  }
+  .dimension_container .dimension_content .actual_content .stats_container .stats h2 {
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+  }
+}
+@media (max-width: 699px) {
+  .dimension_container .dimension_content {
+    flex-direction: column;
+  }
+  .dimension_container .dimension_content .background img {
+    max-height: 80%;
+    max-width: 80%;
+    position: relative;
+    margin: 40px 20px;
+  }
+}
+@media (max-width: 464px) {
+  .dimension_container .dimension_title h1 {
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+  }
+  .dimension_container .dimension_content {
+    flex-direction: column;
+  }
+  .dimension_container .dimension_content .actual_content .images .image_frame {
+    max-height: 100%;
+    max-width: 90%;
+  }
+  .dimension_container .dimension_content .actual_content .images .image_frame img {
+    max-height: 100%;
+    max-width: 90%;
+    border-radius: 10px;
+  }
+  .dimension_container .dimension_content .actual_content .stats_container {
+    gap: 2rem;
+  }
+  .dimension_container .dimension_content .background img {
+    max-height: 80%;
+    max-width: 80%;
+    position: relative;
+    margin: 40px 20px;
   }
 }
 
