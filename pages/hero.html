@@ -9,9 +9,9 @@
   <body>
     <div class="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active animate-on-scroll">
           <img src="../images/hero_1.jpg" alt="Image 1" class="img_1" />
-          <div class="content_1" id="animate-on-scroll">
+          <div class="content_1">
             <p class="subheading">Where Reality Ends And</p>
             <p class="heading">Imagination Begins</p>
             <p class="normal">
@@ -46,12 +46,10 @@
           </div>
         </div>
       </div>
-      <button class="carousel-control prev" onclick="prevSlide()">
-        &#10094;
-      </button>
-      <button class="carousel-control next" onclick="nextSlide()">
-        &#10095;
-      </button>
+      <div class="carousel-control">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
     </div>
 
     <script src="../js/script.js"></script>

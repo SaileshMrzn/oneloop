@@ -175,7 +175,6 @@ body .nav_container #overlay {
   position: relative;
   width: 100%;
   min-height: 80vh;
-  border: 2px solid white;
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
@@ -201,7 +200,7 @@ body .nav_container #overlay {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0 40px;
+  padding: 0 3rem;
   top: 6rem;
 }
 .carousel .carousel-inner .carousel-item .content_1 .subheading, .carousel .carousel-inner .carousel-item .content_2 .subheading {
@@ -297,6 +296,7 @@ body .nav_container #overlay {
   }
   .carousel .carousel-inner .carousel-item .content_1, .carousel .carousel-inner .carousel-item .content_2 {
     top: 10rem;
+    padding: 0 7rem;
   }
   .carousel .carousel-inner .carousel-item .content_1 .subheading, .carousel .carousel-inner .carousel-item .content_2 .subheading {
     font-size: 28px;
@@ -347,19 +347,172 @@ body .nav_container #overlay {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 60vh;
+  align-items: center;
+}
+.carousel .carousel-control:hover button {
+  margin: 0 3rem;
+  transition: all 0.3s ease-in-out;
+}
+.carousel .carousel-control button {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
-  border-radius: 50%;
+  border: 2px solid #62fcf1;
+  height: 50px;
+  width: 50px;
   user-select: none;
+  margin: 0 -3rem;
 }
 .carousel .carousel-control.prev {
   left: 10px;
 }
 .carousel .carousel-control.next {
   right: 10px;
+}
+
+.features_container {
+  display: flex;
+  height: 487px;
+  justify-content: center;
+  align-items: center;
+  background-color: #090a0d;
+  padding: 0 20px;
+}
+.features_container p {
+  line-height: 30.8px;
+}
+.features_container .why_choose_us {
+  height: 306px;
+  width: 422px;
+  border: 2px solid #038e86;
+  padding: 36px;
+}
+.features_container .why_choose_us h2 {
+  margin-bottom: 28px;
+  font-size: 38px;
+  color: white;
+  font-weight: 600;
+}
+.features_container .why_choose_us p {
+  margin-bottom: 28px;
+}
+.features_container .why_choose_us button {
+  padding: 15px 24px;
+  border: 2px solid #62fcf1;
+  background: transparent;
+  color: #62fcf1;
+  font-size: 17.6px;
+  font-weight: 500;
+}
+.features_container .why_choose_us button:hover {
+  background-color: #038e86;
+  border: 2px solid #038e86;
+  color: white;
+}
+.features_container .features_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: start;
+  align-items: center;
+  width: 898px;
+  padding: 0 24px;
+}
+.features_container .features_list .list {
+  height: 108px;
+  width: 420px;
+  margin-bottom: 32px;
+  padding: 0 25px;
+  display: flex;
+  gap: 20px;
+}
+.features_container .features_list .list .icon {
+  height: 62px;
+  width: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background-color: #0e0f0f;
+}
+.features_container .features_list .list .icon img {
+  height: 32px;
+  width: 30px;
+}
+.features_container .features_list .list h3 {
+  position: relative;
+  display: inline-block;
+  font-size: 27px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.features_container .features_list .list h3:hover {
+  color: #62fcf1;
+}
+.features_container .features_list .list h3::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #62fcf1;
+  transition: width 0.4s ease;
+}
+.features_container .features_list .list h3:hover::after {
+  width: 100%;
+}
+@media (max-width: 1372px) {
+  .features_container .features_list .list {
+    width: 50%;
+  }
+}
+@media (max-width: 1192px) {
+  .features_container .why_choose_us {
+    height: fit-content;
+  }
+}
+@media (max-width: 1152px) {
+  .features_container .features_list .list {
+    width: 50%;
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 890px) {
+  .features_container {
+    flex-direction: column;
+    height: fit-content;
+    padding: 50px 0;
+  }
+  .features_container .why_choose_us {
+    margin-bottom: 50px;
+  }
+  .features_container .features_list {
+    width: fit-content;
+  }
+}
+@media (max-width: 554px) {
+  .features_container .why_choose_us {
+    width: 80%;
+    margin-bottom: 70px;
+  }
+  .features_container .features_list {
+    flex-direction: column;
+    width: fit-content;
+  }
+  .features_container .features_list .list {
+    width: 100%;
+    margin-bottom: 70px;
+  }
 }
 
 * {

@@ -52,31 +52,59 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(err);
     });
 
+  fetch("../pages/features.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.getElementById("features_section").innerHTML = content;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
   showSlide(currentIndex);
-
-  //animate
-  const elementsToAnimate = document.getElementById("animate-on-scroll");
-  console.log(elementsToAnimate);
-
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        console.log(entry);
-        if (entry.isIntersecting) {
-          entry.target.classList.add("fade-in");
-
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.1,
-    }
-  );
-
-  elementsToAnimate.forEach((element) => {
-    observer.observe(element);
-  });
 });
+
+// window.onload = function () {
+//   console.log("hello");
+//   console.log("after window.onload");
+//   const carouselInner = document.querySelector(".carousel .carousel-inner");
+//   const carouselControl = document.getElementById("control");
+//   console.log(carouselControl);
+
+//   if (carouselInner && carouselControl) {
+//     carouselInner.addEventListener("mouseenter", function () {
+//       carouselControl.style.opacity = "1";
+//     });
+
+//     carouselInner.addEventListener("mouseleave", function () {
+//       carouselControl.style.opacity = "0.5";
+//     });
+//   }
+// };
+
+// window.onload = function () {
+//   const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
+//   console.log(elementsToAnimate);
+
+//   const observer = new IntersectionObserver(
+//     (entries, observer) => {
+//       entries.forEach((entry) => {
+//         console.log(entry);
+//         if (entry.isIntersecting) {
+//           entry.target.classList.add("fade-in");
+
+//           observer.unobserve(entry.target);
+//         }
+//       });
+//     },
+//     {
+//       root: null,
+//       rootMargin: "0px",
+//       threshold: 0.1,
+//     }
+//   );
+
+//   elementsToAnimate.forEach((element) => {
+//     observer.observe(element);
+//   });
+// };
