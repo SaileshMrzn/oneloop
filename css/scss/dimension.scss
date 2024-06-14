@@ -17,7 +17,6 @@
 
   .dimension_content {
     display: flex;
-    // flex-direction: column;
 
     .actual_content {
       display: flex;
@@ -80,9 +79,6 @@
     .background {
       img {
         position: absolute;
-        // height: 100%;
-        // width: 100%;
-        // border: 1px solid red;
         right: 12%;
         bottom: 0;
         z-index: 10;

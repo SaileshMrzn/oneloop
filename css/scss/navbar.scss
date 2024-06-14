@@ -6,9 +6,13 @@ body {
 
   .nav_container {
     display: flex;
+    background-color: black;
     justify-content: space-between;
     align-items: center;
     padding: 20px 77px;
+    position: fixed;
+    z-index: 80;
+    width: 100%;
 
     .left {
       display: flex;
@@ -52,6 +56,30 @@ body {
         .down_icon {
           scale: 0.6;
         }
+
+        .about {
+          &:hover .about_dropdown {
+            display: flex;
+            opacity: 1;
+          }
+        }
+
+        .about_dropdown {
+          position: absolute;
+          display: none;
+          flex-direction: column;
+          background: #0e0f0f;
+          top: 3.5rem;
+          left: 35%;
+          width: 200px;
+          transition: all 0.5s ease;
+          opacity: 0;
+
+          a {
+            border-bottom: 0.5px solid rgb(61, 58, 58);
+            padding: 15px 15px;
+          }
+        }
       }
 
       .right_extra {
@@ -93,7 +121,7 @@ body {
 
     #men {
       height: 100vh;
-      background: rgb(53, 52, 52);
+      background: #0e0f0f;
       width: 200px;
       position: absolute;
       top: 0;
@@ -104,6 +132,29 @@ body {
       display: none;
       padding-top: 20px;
 
+      .about {
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid gray;
+        padding: 10px 0px;
+
+        .menu_about_dropdown {
+          display: none;
+          flex-direction: column;
+          background: #0e0f0f;
+          top: 3.5rem;
+          left: 35%;
+          width: 100px;
+          transition: all 0.5s ease;
+          padding: 10px 10px 0 10px;
+
+          a {
+            border-bottom: 0.5px solid rgb(61, 58, 58);
+            padding: 2px 2px;
+          }
+        }
+      }
+
       .x_icon {
         position: absolute;
         right: 0;
@@ -111,6 +162,7 @@ body {
         padding: 6px;
         cursor: pointer;
       }
+
       a {
         color: white;
         text-decoration: none;
@@ -123,6 +175,7 @@ body {
           color: white;
         }
       }
+
       .down_icon {
         scale: 0.6;
       }
@@ -150,17 +203,18 @@ body {
       justify-content: center;
       align-items: center;
       padding: 20px 77px;
-    }
 
-    @media (max-width: 1040px) {
       .right {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        .right_general {
+          .about_dropdown {
+            left: 20%;
+            top: 8rem;
+          }
+        }
       }
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 1040px) {
       .menu_bar {
         display: block !important;
       }
@@ -179,12 +233,14 @@ body {
       }
       .right {
         .right_extra {
-          gap: 15px;
-          font-size: 12px;
+          gap: 20px;
+          font-size: 15px;
+          width: 300px;
+          justify-content: center;
+
           .btn_getStarted {
             padding: 10px 10px;
             border: 2px solid $primary_color;
-            // font-size: 10px;
             font-size: 12px;
           }
         }
@@ -193,7 +249,7 @@ body {
       #men {
         width: 175px;
         padding-top: 10px;
-        font-size: 12px;
+        font-size: 15px;
       }
     }
   }

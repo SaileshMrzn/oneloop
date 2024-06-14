@@ -13,6 +13,20 @@ function toggleMenu() {
   }
 }
 
+function toggleMenuDropdown() {
+  console.log("clicked");
+
+  const dropdown = document.getElementById("menu_dropdown");
+
+  const isnotDisplayed = window.getComputedStyle(dropdown).display === "none";
+
+  if (isnotDisplayed) {
+    dropdown.style.display = "flex";
+  } else {
+    dropdown.style.display = "none";
+  }
+}
+
 let currentIndex = 0;
 function showSlide(index) {
   const slides = document.querySelectorAll(".carousel-item");
@@ -43,6 +57,14 @@ function prevSlide() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  fetch("../pages/navbar.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.getElementById("navbar_section").innerHTML = content;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
   fetch("../pages/hero.html")
     .then((response) => response.text())
     .then((content) => {
