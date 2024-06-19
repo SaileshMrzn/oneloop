@@ -92,8 +92,107 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(err);
     });
 
+  fetch("../pages/services.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.getElementById("services_section").innerHTML = content;
+      initializeSlickCarousel();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
+  fetch("../pages/testimonials.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.getElementById("testimonials_section").innerHTML = content;
+      initializeSlickCarousel2();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
   showSlide(currentIndex);
 });
+
+function initializeSlickCarousel() {
+  $(document).ready(function () {
+    $(".slider").slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 1170,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 950,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+          },
+        },
+        {
+          breakpoint: 710,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+          },
+        },
+      ],
+    });
+  });
+}
+function initializeSlickCarousel2() {
+  $(document).ready(function () {
+    $(".slider2").slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      // responsive: [
+      //   {
+      //     breakpoint: 1170,
+      //     settings: {
+      //       slidesToShow: 3,
+      //       slidesToScroll: 3,
+      //       infinite: true,
+      //       dots: false,
+      //     },
+      //   },
+      //   {
+      //     breakpoint: 950,
+      //     settings: {
+      //       slidesToShow: 2,
+      //       slidesToScroll: 2,
+      //       infinite: true,
+      //     },
+      //   },
+      //   {
+      //     breakpoint: 710,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1,
+      //       infinite: true,
+      //     },
+      //   },
+      // ],
+    });
+  });
+}
 
 // window.onload = function () {
 //   console.log("hello");
