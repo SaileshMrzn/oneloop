@@ -1238,7 +1238,7 @@ body .nav_container #overlay {
   align-items: center;
 }
 .news_container .news_content .content .right .right_content .r_image {
-  min-height: 150px;
+  height: 150px;
   min-width: 128px;
   overflow: hidden;
   border-radius: 20px;
