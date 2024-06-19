@@ -7,3 +7,24 @@ $orange: #9a3607;
   color: $color;
   font-weight: $weight;
 }
+
+%text_underline {
+  &:hover {
+    color: $primary_color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: $primary_color;
+    transition: width 0.4s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
