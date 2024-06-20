@@ -122,6 +122,16 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(err);
     });
 
+  fetch("../pages/pricing.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.getElementById("pricing_section").innerHTML = content;
+      initializeSlickCarousel2();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
   showSlide(currentIndex);
 });
 

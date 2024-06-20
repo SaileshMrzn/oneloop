@@ -1298,6 +1298,153 @@ body .nav_container #overlay {
   }
 }
 
+.news_container .news_content .content .left .text .topic h2:hover, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover {
+  color: #62fcf1;
+}
+.news_container .news_content .content .left .text .topic h2::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #62fcf1;
+  transition: width 0.4s ease;
+}
+.news_container .news_content .content .left .text .topic h2:hover::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after {
+  width: 100%;
+}
+
+.pricing_container {
+  min-height: 1013px;
+  background-color: #0e0f0f;
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 30px;
+}
+.pricing_container .title {
+  text-align: center;
+}
+.pricing_container .title p {
+  font-size: 17.6px;
+  color: #62fcf1;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+.pricing_container .title h2 {
+  font-size: 38px;
+  color: white;
+  font-weight: 900;
+}
+@media (max-width: 540px) {
+  .pricing_container .title h2 {
+    font-size: 28px;
+    color: white;
+    font-weight: 900;
+  }
+}
+.pricing_container .content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.pricing_container .content .plan, .pricing_container .content .plan_regular {
+  background-color: #090a0d;
+  max-height: 602px;
+  max-width: 405px;
+  min-width: 200px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.pricing_container .content .plan h1, .pricing_container .content .plan_regular h1 {
+  font-size: 64px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pricing_container .content .plan h1 .month, .pricing_container .content .plan_regular h1 .month {
+  font-size: 15px;
+  color: #f78854;
+  font-weight: 600;
+  font-style: italic;
+  align-self: self-end;
+}
+.pricing_container .content .plan h2, .pricing_container .content .plan_regular h2 {
+  font-size: 20px;
+  color: #62fcf1;
+  font-weight: 900;
+}
+.pricing_container .content .plan .description, .pricing_container .content .plan_regular .description {
+  line-height: 30.8px;
+  list-style: none;
+  font-size: 17.6px;
+  color: white;
+  font-weight: 400;
+}
+.pricing_container .content .plan .description li, .pricing_container .content .plan_regular .description li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pricing_container .content .plan button, .pricing_container .content .plan_regular button {
+  padding: 10px 30px;
+  border: 2px solid #62fcf1;
+  background: transparent;
+  color: #62fcf1;
+  font-size: 17.6px;
+  font-weight: 500;
+}
+.pricing_container .content .plan button:hover, .pricing_container .content .plan_regular button:hover {
+  background-color: #038e86;
+  border: 2px solid #038e86;
+  color: white;
+}
+.pricing_container .content .plan_regular {
+  border: 2px solid #62fcf1;
+  height: 631px;
+}
+.pricing_container .content .plan_regular button {
+  background: #038e86;
+  border: 2px solid #038e86;
+  color: white;
+}
+.pricing_container .content .plan_regular button:hover {
+  background-color: #9a3607;
+  border: 2px solid #9a3607;
+  color: white;
+}
+@media (max-width: 984px) {
+  .pricing_container .content {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .pricing_container .content .plan, .pricing_container .content .plan_regular {
+    min-height: 507px;
+    max-width: 700px;
+    min-width: 200px;
+  }
+  .pricing_container .content .plan h1, .pricing_container .content .plan_regular h1 {
+    font-size: 44px;
+    color: white;
+    font-weight: 600;
+  }
+}
+@media (max-width: 540px) {
+  .pricing_container .content .plan h1, .pricing_container .content .plan_regular h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
