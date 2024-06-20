@@ -87,7 +87,9 @@
 
       h2 {
         @include text(27.2px, white, 600);
+        position: relative;
         cursor: pointer;
+        @extend %text_underline;
       }
 
       p {

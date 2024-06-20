@@ -136,6 +136,7 @@
           .topic {
             h2 {
               @include text(38px, white, 700);
+              position: relative;
               line-height: 50px;
               @extend %text_underline;
               cursor: pointer;
@@ -175,11 +176,12 @@
           .r_text {
             .r_topic {
               h2 {
-                @extend %text_underline;
                 @include text(17px, white, 600);
+                position: relative;
                 line-height: 23px;
                 margin-bottom: 12px;
                 cursor: pointer;
+                @extend %text_underline;
               }
             }
             .date {

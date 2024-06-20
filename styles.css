@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
-.news_container .news_content .content .right .right_content .r_text .r_topic h2:hover, .news_container .news_content .content .left .text .topic h2:hover {
+.features2_container .content .feature h2:hover, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover, .news_container .news_content .content .left .text .topic h2:hover {
   color: #62fcf1;
 }
-.news_container .news_content .content .right .right_content .r_text .r_topic h2::after, .news_container .news_content .content .left .text .topic h2::after {
+.features2_container .content .feature h2::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2::after, .news_container .news_content .content .left .text .topic h2::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -13,7 +13,7 @@
   background: #62fcf1;
   transition: width 0.4s ease;
 }
-.news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after {
+.features2_container .content .feature h2:hover::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after {
   width: 100%;
 }
 
@@ -231,10 +231,10 @@ body .nav_container #overlay {
   }
 }
 
-.news_container .news_content .content .right .right_content .r_text .r_topic h2:hover, .news_container .news_content .content .left .text .topic h2:hover {
+.features2_container .content .feature h2:hover, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover, .news_container .news_content .content .left .text .topic h2:hover {
   color: #62fcf1;
 }
-.news_container .news_content .content .right .right_content .r_text .r_topic h2::after, .news_container .news_content .content .left .text .topic h2::after {
+.features2_container .content .feature h2::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2::after, .news_container .news_content .content .left .text .topic h2::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -244,7 +244,7 @@ body .nav_container #overlay {
   background: #62fcf1;
   transition: width 0.4s ease;
 }
-.news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after {
+.features2_container .content .feature h2:hover::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after {
   width: 100%;
 }
 
@@ -465,10 +465,10 @@ body .nav_container #overlay {
   right: 10px;
 }
 
-.news_container .news_content .content .right .right_content .r_text .r_topic h2:hover, .news_container .news_content .content .left .text .topic h2:hover {
+.features2_container .content .feature h2:hover, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover, .news_container .news_content .content .left .text .topic h2:hover {
   color: #62fcf1;
 }
-.news_container .news_content .content .right .right_content .r_text .r_topic h2::after, .news_container .news_content .content .left .text .topic h2::after {
+.features2_container .content .feature h2::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2::after, .news_container .news_content .content .left .text .topic h2::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -478,7 +478,7 @@ body .nav_container #overlay {
   background: #62fcf1;
   transition: width 0.4s ease;
 }
-.news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after {
+.features2_container .content .feature h2:hover::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after {
   width: 100%;
 }
 
@@ -620,10 +620,10 @@ body .nav_container #overlay {
   }
 }
 
-.news_container .news_content .content .right .right_content .r_text .r_topic h2:hover, .news_container .news_content .content .left .text .topic h2:hover {
+.features2_container .content .feature h2:hover, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover, .news_container .news_content .content .left .text .topic h2:hover {
   color: #62fcf1;
 }
-.news_container .news_content .content .right .right_content .r_text .r_topic h2::after, .news_container .news_content .content .left .text .topic h2::after {
+.features2_container .content .feature h2::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2::after, .news_container .news_content .content .left .text .topic h2::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -633,7 +633,7 @@ body .nav_container #overlay {
   background: #62fcf1;
   transition: width 0.4s ease;
 }
-.news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after {
+.features2_container .content .feature h2:hover::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after {
   width: 100%;
 }
 
@@ -780,10 +780,10 @@ body .nav_container #overlay {
   }
 }
 
-.news_container .news_content .content .right .right_content .r_text .r_topic h2:hover, .news_container .news_content .content .left .text .topic h2:hover {
+.features2_container .content .feature h2:hover, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover, .news_container .news_content .content .left .text .topic h2:hover {
   color: #62fcf1;
 }
-.news_container .news_content .content .right .right_content .r_text .r_topic h2::after, .news_container .news_content .content .left .text .topic h2::after {
+.features2_container .content .feature h2::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2::after, .news_container .news_content .content .left .text .topic h2::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -793,7 +793,7 @@ body .nav_container #overlay {
   background: #62fcf1;
   transition: width 0.4s ease;
 }
-.news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after {
+.features2_container .content .feature h2:hover::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after {
   width: 100%;
 }
 
@@ -1085,10 +1085,10 @@ body .nav_container #overlay {
   }
 }
 
-.news_container .news_content .content .right .right_content .r_text .r_topic h2:hover, .news_container .news_content .content .left .text .topic h2:hover {
+.features2_container .content .feature h2:hover, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover, .news_container .news_content .content .left .text .topic h2:hover {
   color: #62fcf1;
 }
-.news_container .news_content .content .right .right_content .r_text .r_topic h2::after, .news_container .news_content .content .left .text .topic h2::after {
+.features2_container .content .feature h2::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2::after, .news_container .news_content .content .left .text .topic h2::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -1098,7 +1098,7 @@ body .nav_container #overlay {
   background: #62fcf1;
   transition: width 0.4s ease;
 }
-.news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after {
+.features2_container .content .feature h2:hover::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after {
   width: 100%;
 }
 
@@ -1230,6 +1230,7 @@ body .nav_container #overlay {
   font-size: 38px;
   color: white;
   font-weight: 700;
+  position: relative;
   line-height: 50px;
   cursor: pointer;
 }
@@ -1262,6 +1263,7 @@ body .nav_container #overlay {
   font-size: 17px;
   color: white;
   font-weight: 600;
+  position: relative;
   line-height: 23px;
   margin-bottom: 12px;
   cursor: pointer;
@@ -1304,10 +1306,10 @@ body .nav_container #overlay {
   }
 }
 
-.news_container .news_content .content .left .text .topic h2:hover, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover {
+.features2_container .content .feature h2:hover, .news_container .news_content .content .left .text .topic h2:hover, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover {
   color: #62fcf1;
 }
-.news_container .news_content .content .left .text .topic h2::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2::after {
+.features2_container .content .feature h2::after, .news_container .news_content .content .left .text .topic h2::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -1317,7 +1319,7 @@ body .nav_container #overlay {
   background: #62fcf1;
   transition: width 0.4s ease;
 }
-.news_container .news_content .content .left .text .topic h2:hover::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after {
+.features2_container .content .feature h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after {
   width: 100%;
 }
 
@@ -1451,10 +1453,10 @@ body .nav_container #overlay {
   }
 }
 
-.news_container .news_content .content .left .text .topic h2:hover, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover {
+.features2_container .content .feature h2:hover, .news_container .news_content .content .left .text .topic h2:hover, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover {
   color: #62fcf1;
 }
-.news_container .news_content .content .left .text .topic h2::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2::after {
+.features2_container .content .feature h2::after, .news_container .news_content .content .left .text .topic h2::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -1464,7 +1466,7 @@ body .nav_container #overlay {
   background: #62fcf1;
   transition: width 0.4s ease;
 }
-.news_container .news_content .content .left .text .topic h2:hover::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after {
+.features2_container .content .feature h2:hover::after, .news_container .news_content .content .left .text .topic h2:hover::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after {
   width: 100%;
 }
 
@@ -1556,6 +1558,7 @@ body .nav_container #overlay {
   font-size: 27.2px;
   color: white;
   font-weight: 600;
+  position: relative;
   cursor: pointer;
 }
 .features2_container .content .feature p {
