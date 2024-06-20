@@ -838,6 +838,9 @@ body .nav_container #overlay {
   color: white;
 }
 @media (max-width: 1170px) {
+  .services_container .services_heading, .testimonials_container .services_heading, .testimonials_container .testimonials_heading {
+    margin: 0 1rem;
+  }
   .services_container .services_heading .title h2, .testimonials_container .services_heading .title h2, .testimonials_container .testimonials_heading .title h2 {
     font-size: 36px;
     color: white;
@@ -1141,6 +1144,9 @@ body .nav_container #overlay {
   color: white;
 }
 @media (max-width: 1170px) {
+  .news_container .news_heading {
+    margin: 0 1rem;
+  }
   .news_container .news_heading .title h2 {
     font-size: 36px;
     color: white;
@@ -1443,6 +1449,147 @@ body .nav_container #overlay {
     color: white;
     font-weight: 600;
   }
+}
+
+.news_container .news_content .content .left .text .topic h2:hover, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover {
+  color: #62fcf1;
+}
+.news_container .news_content .content .left .text .topic h2::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #62fcf1;
+  transition: width 0.4s ease;
+}
+.news_container .news_content .content .left .text .topic h2:hover::after, .news_container .news_content .content .right .right_content .r_text .r_topic h2:hover::after {
+  width: 100%;
+}
+
+.features2_container {
+  min-height: 822px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  overflow: hidden;
+  padding: 100px 30px;
+}
+.features2_container .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5rem;
+}
+.features2_container .heading .title p {
+  font-size: 17.6px;
+  color: white;
+  font-weight: 400;
+  color: #62fcf1;
+  margin-bottom: 7px;
+}
+.features2_container .heading .title h2 {
+  font-size: 46px;
+  color: white;
+  font-weight: 600;
+}
+.features2_container .heading button {
+  padding: 11px 30px;
+  border: 2px solid #62fcf1;
+  background: transparent;
+  color: #62fcf1;
+  font-size: 17.6px;
+  font-weight: 500;
+}
+.features2_container .heading button:hover {
+  background-color: #038e86;
+  border: 2px solid #038e86;
+  color: white;
+}
+@media (max-width: 1170px) {
+  .features2_container .heading {
+    margin: 0 1rem;
+  }
+  .features2_container .heading .title h2 {
+    font-size: 36px;
+    color: white;
+    font-weight: 600;
+  }
+}
+@media (max-width: 920px) {
+  .features2_container .heading {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.features2_container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.features2_container .content .feature {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 371px;
+  width: 418px;
+  background-color: #090a0d;
+  border-bottom: 2px solid #038e86;
+  padding: 60px;
+  justify-content: center;
+}
+.features2_container .content .feature .icon {
+  height: 52px;
+  width: 52px;
+}
+.features2_container .content .feature .icon img {
+  height: 52px;
+  max-width: 52px;
+  min-width: fit-content;
+  object-fit: cover;
+}
+.features2_container .content .feature h2 {
+  font-size: 27.2px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.features2_container .content .feature p {
+  font-size: 17.6px;
+  color: white;
+  font-weight: 400;
+  line-height: 30.8px;
+}
+.features2_container .content .feature h3 {
+  font-size: 17.6px;
+  color: #62fcf1;
+  font-weight: 700;
+  cursor: pointer;
+}
+.features2_container .view_more {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+.features2_container .view_more button {
+  height: 55px;
+  width: 155px;
+  padding: 13px 30px;
+  background-color: #038e86;
+  border: 2px solid #038e86;
+  font-size: 17.6px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.features2_container .view_more button:hover {
+  background-color: #9a3607;
+  border: 2px solid #9a3607;
 }
 
 * {

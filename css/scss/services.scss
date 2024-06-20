@@ -42,6 +42,8 @@
     }
 
     @media (max-width: 1170px) {
+      margin: 0 1rem;
+
       .title {
         h2 {
           @include text(36px, white, 600);
