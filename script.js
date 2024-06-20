@@ -142,6 +142,26 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(err);
     });
 
+  fetch("../pages/companies.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.getElementById("companies_section").innerHTML = content;
+      initializeSlickCarousel2();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
+  fetch("../pages/footer.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.getElementById("footer_section").innerHTML = content;
+      initializeSlickCarousel2();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
   showSlide(currentIndex);
 });
 

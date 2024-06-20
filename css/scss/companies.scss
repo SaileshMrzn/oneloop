@@ -1,0 +1,24 @@
+@import "./variables.scss";
+
+.companies_container {
+  min-height: 257.2px;
+  width: 100%;
+  padding: 81px 16px;
+  background-color: #0e0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .company {
+    height: 95.3px;
+    width: 238.4px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

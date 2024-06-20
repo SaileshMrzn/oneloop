@@ -1,0 +1,235 @@
+@import "./variables.scss";
+
+.footer_container {
+  min-height: 708px;
+  padding: 64px 48px;
+
+  .footer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3%;
+    align-self: flex-start;
+    border-bottom: 1px solid #7b7365;
+    padding: 0 0 60px 0;
+    gap: 50px;
+
+    .col1 {
+      display: flex;
+      flex-direction: column;
+      max-width: 310px;
+      gap: 30px;
+      align-self: flex-start;
+
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          height: 49px;
+          width: 49px;
+        }
+
+        h2 {
+          @include text(24px, white, 600);
+        }
+      }
+
+      .text {
+        p {
+          @include text(17.6px, white, 400);
+          line-height: 30.8px;
+        }
+      }
+    }
+
+    .col2,
+    .col3 {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-self: flex-start;
+
+      h2 {
+        @include text(24px, white, 500);
+      }
+
+      .lists {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          @include text(17.6px, white, 400);
+
+          .clock {
+            scale: 0.8;
+          }
+        }
+      }
+    }
+
+    .col4 {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-self: flex-start;
+
+      h2 {
+        @include text(24px, white, 500);
+      }
+
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        p {
+          @include text(16px, white, 600);
+        }
+      }
+    }
+
+    @media (max-width: 978px) {
+      flex-direction: column;
+
+      .col1 {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .footer2 {
+    @extend .footer1;
+    margin-top: 60px;
+    border: none;
+
+    .coll1,
+    .coll3 {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-self: flex-start;
+
+      h2 {
+        @include text(24px, white, 500);
+      }
+
+      .icons {
+        display: flex;
+        gap: 35px;
+
+        .payment {
+          scale: 2.2;
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .coll3 {
+      .icons {
+        flex-wrap: wrap;
+      }
+    }
+
+    .coll2 {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-self: flex-start;
+
+      h2 {
+        @include text(24px, white, 500);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input {
+          padding: 7px 15px;
+          background-color: #0c0d0d;
+          height: 45px;
+          width: 412px;
+          outline: none;
+          border: none;
+          color: #e8e6e3;
+          font-size: 17px;
+
+          &:focus {
+            border: 1px solid white;
+          }
+        }
+
+        button {
+          height: 45px;
+          width: 130px;
+          padding: 10px 30px;
+          background-color: $secondary_color;
+          border: 2px solid $secondary_color;
+          @include text(17px, white, 400);
+          text-align: center;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $orange;
+            border: 2px solid $orange;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1148px) {
+      .coll3 {
+        .icons {
+          margin-right: 10px;
+
+          .payment {
+            scale: 1.8;
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 978px) {
+      .coll3 {
+        .icons {
+          margin-left: 12px;
+          .payment {
+            scale: 2.2;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 540px) {
+      .coll2 {
+        form {
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.the_end {
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  background-color: #090a0d;
+  padding: 0 2rem;
+  text-align: center;
+  @include text(17.6px, white, 400);
+}
