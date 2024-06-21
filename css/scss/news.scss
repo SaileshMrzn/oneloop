@@ -34,6 +34,7 @@
       color: $primary_color;
       font-size: 17.6px;
       font-weight: 500;
+      cursor: pointer;
 
       &:hover {
         background-color: $secondary_color;
@@ -140,6 +141,10 @@
               line-height: 50px;
               @extend %text_underline;
               cursor: pointer;
+
+              @media (max-width: 768px) {
+                @include text(28px, white, 700);
+              }
             }
           }
         }

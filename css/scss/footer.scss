@@ -128,6 +128,14 @@
           scale: 2.2;
           margin-right: 15px;
         }
+
+        .socials {
+          cursor: pointer;
+          transition: all ease 0.2s;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
       }
     }
 

@@ -26,6 +26,9 @@ body {
       .title {
         font-size: 24px;
         font-weight: 600;
+        position: relative;
+        cursor: pointer;
+        @extend %text_underline;
       }
     }
 
@@ -109,6 +112,7 @@ body {
           color: $primary_color;
           font-size: 17.6px;
           font-weight: 500;
+          cursor: pointer;
 
           &:hover {
             background-color: $secondary_color;

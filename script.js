@@ -27,35 +27,6 @@ function toggleMenuDropdown() {
   }
 }
 
-let currentIndex = 0;
-function showSlide(index) {
-  const slides = document.querySelectorAll(".carousel-item");
-  if (index >= slides.length) {
-    currentIndex = 0;
-  } else if (index < 0) {
-    currentIndex = slides.length - 1;
-  } else {
-    currentIndex = index;
-  }
-
-  const offset = -currentIndex * 100;
-  document.querySelector(
-    ".carousel-inner"
-  ).style.transform = `translateX(${offset}%)`;
-
-  slides.forEach((slide, i) => {
-    slide.classList.toggle("active", i === currentIndex);
-  });
-}
-
-function nextSlide() {
-  showSlide(currentIndex + 1);
-}
-
-function prevSlide() {
-  showSlide(currentIndex - 1);
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   fetch("../pages/navbar.html")
     .then((response) => response.text())
@@ -69,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.text())
     .then((content) => {
       document.getElementById("hero_section").innerHTML = content;
+      initializeSlickCarousel2();
     })
     .catch((err) => {
       console.log(err);
@@ -116,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.text())
     .then((content) => {
       document.getElementById("news_section").innerHTML = content;
-      initializeSlickCarousel2();
     })
     .catch((err) => {
       console.log(err);
@@ -126,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.text())
     .then((content) => {
       document.getElementById("pricing_section").innerHTML = content;
-      initializeSlickCarousel2();
     })
     .catch((err) => {
       console.log(err);
@@ -136,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.text())
     .then((content) => {
       document.getElementById("features2_section").innerHTML = content;
-      initializeSlickCarousel2();
     })
     .catch((err) => {
       console.log(err);
@@ -146,7 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.text())
     .then((content) => {
       document.getElementById("companies_section").innerHTML = content;
-      initializeSlickCarousel2();
     })
     .catch((err) => {
       console.log(err);
@@ -156,13 +124,10 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.text())
     .then((content) => {
       document.getElementById("footer_section").innerHTML = content;
-      initializeSlickCarousel2();
     })
     .catch((err) => {
       console.log(err);
     });
-
-  showSlide(currentIndex);
 });
 
 function initializeSlickCarousel() {
@@ -244,25 +209,7 @@ function initializeSlickCarousel2() {
   });
 }
 
-// window.onload = function () {
-//   console.log("hello");
-//   console.log("after window.onload");
-//   const carouselInner = document.querySelector(".carousel .carousel-inner");
-//   const carouselControl = document.getElementById("control");
-//   console.log(carouselControl);
-
-//   if (carouselInner && carouselControl) {
-//     carouselInner.addEventListener("mouseenter", function () {
-//       carouselControl.style.opacity = "1";
-//     });
-
-//     carouselInner.addEventListener("mouseleave", function () {
-//       carouselControl.style.opacity = "0.5";
-//     });
-//   }
-// };
-
-// window.onload = function () {
+// document.addEventListener("DOMContentLoaded", () => {
 //   const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
 //   console.log(elementsToAnimate);
 
@@ -287,4 +234,25 @@ function initializeSlickCarousel2() {
 //   elementsToAnimate.forEach((element) => {
 //     observer.observe(element);
 //   });
-// };
+// });
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  var btn = document.getElementById("scrollToTopBtn");
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+}
+
+document.getElementById("scrollToTopBtn").onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
