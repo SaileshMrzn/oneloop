@@ -1037,7 +1037,8 @@ body .nav_container #overlay {
 }
 .testimonials_container .testimonials_carousel {
   margin: 0 4rem;
-  height: 100%;
+  height: fit-content;
+  overflow: hidden;
   padding: 20px 10px;
 }
 .testimonials_container .testimonials_carousel .carousel_item_testimonial {

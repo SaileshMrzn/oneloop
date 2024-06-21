@@ -200,7 +200,6 @@
   background-color: black;
   min-height: 720px;
   max-height: 100%;
-  // min-height: fit-content;
   overflow: hidden;
 
   .testimonials_heading {
@@ -210,21 +209,18 @@
   .testimonials_carousel {
     @extend .services_carousel;
     margin: 0 4rem;
-    // width: fit-content;
-    // width: 0;\
-    height: 100%;
+    height: fit-content;
+    overflow: hidden;
     padding: 20px 10px;
 
     .carousel_item_testimonial {
       height: 100%;
       border: 2px solid #2d2f38;
       max-width: 1500px;
-      // min-width: fit-content;
       min-height: 358px;
       border-radius: 20px;
       padding: 81px 52px;
       position: relative;
-      // z-index: 2000;
 
       .intro {
         position: absolute;
